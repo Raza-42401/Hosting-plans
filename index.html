@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RAZA'S HOSTING SERVICES</h1>
+    </header>
+
+    <section class="plans-container">
+        <!-- Basic Plan -->
+        <div class="plan-card" id="basic-plan">
+            <h2>Basic Plan</h2>
+            <p class="price">$5/month</p>
+            <ul class="features">
+                <li>10GB Storage</li>
+                <li>100GB Bandwidth</li>
+                <li>1 Domain</li>
+            </ul>
+            <p class="support">Support: Email Support</p>
+            <button class="buy-btn" onclick="buyPlan('Basic', 5)">Buy Now</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card" id="pro-plan">
+            <h2>Pro Plan</h2>
+            <p class="price">$15/month</p>
+            <ul class="features">
+                <li>50GB Storage</li>
+                <li>500GB Bandwidth</li>
+                <li>5 Domains</li>
+            </ul>
+            <p class="support">Support: Email + Phone Support</p>
+            <button class="buy-btn" onclick="buyPlan('Pro', 15)">Buy Now</button>
+        </div>
+
+        <!-- Business Plan -->
+        <div class="plan-card" id="business-plan">
+            <h2>Business Plan</h2>
+            <p class="price">$25/month</p>
+            <ul class="features">
+                <li>Unlimited Storage</li>
+                <li>Unlimited Bandwidth</li>
+                <li>Unlimited Domains</li>
+            </ul>
+            <p class="support">Support: 24/7 Support</p>
+            <button class="buy-btn" onclick="buyPlan('Business', 25)">Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Modal for confirmation -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Purchase Confirmation</h2>
+            <p id="confirmation-message"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
